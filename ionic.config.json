@@ -1,5 +1,7 @@
 {
   "name": "Empy",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
