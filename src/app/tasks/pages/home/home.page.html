@@ -1,9 +1,128 @@
-<ion-header>
+<ion-footer>
+
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button>
+
+      <ion-icon name="contact" color="primary"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="md-apps" color="primary"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="mail" color="primary"></ion-icon>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>
+
   </ion-toolbar>
-</ion-header>
+</ion-footer>
 
 <ion-content>
 
+  <ion-card style="box-shadow: none;">
+    <ion-grid>
+
+      <!-- <ion-row>
+        <ion-col size="4" align-items-center>
+          <ion-avatar class="userphoto">
+            <img src="../../assets/img/avatar.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input [(ngModel)]="userinfoService.user.username" class="username" value="Gandalf the Grey"></ion-input>
+        </ion-col>
+      </ion-row> -->
+
+      <ion-row>
+        <!-- <input type="file" id="imageUploader" accept="image/*" style="display:none" (change)="processFile(imageInput)"> -->
+        <ion-avatar class="userphoto" >
+          <img src="https://i.imgur.com/nwhnRsZ.jpg">
+        </ion-avatar>
+      </ion-row>
+
+      <ion-row>
+        <ion-input
+        Daniel
+        class="username"
+        value="Daniel Saluceste">
+      </ion-input>
+      </ion-row>
+
+      <ion-row>
+        <ion-input
+          Descriçao
+          class="description"
+          value="Uma pequena descrição...">
+        </ion-input>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-icon name="flame" color="danger" slot="start"></ion-icon>
+      <ion-label class="my-ion-label">Disponivel</ion-label>
+      <ion-toggle  checked></ion-toggle>
+    </ion-item>
+    <ion-card-content class="sub-content">
+        Se selecionado, pessoas poderão entrar em contato.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="profile-header">
+      <ion-card-subtitle>Informações pessoais</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-item lines="none">
+      <ion-label class="sub-label">Gênero</ion-label>
+      <ion-select class="customSelect" slot="end" interface="popover" value="other">
+        <ion-select-option value="male">Masculino</ion-select-option>
+        <ion-select-option value="female">Feminino</ion-select-option>
+        <ion-select-option value="other">Outros</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="sub-label">Cidade</ion-label>
+      <ion-input class="sub-input" slot="end" placeholder="Ex: Bauru"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="sub-label">Nascimento</ion-label>
+      <ion-input class="sub-input" slot="end" placeholder="Ex: 01/01/1999"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" >
+      <ion-label class="sub-label">Email</ion-label>
+      <ion-input disabled="true" class="sub-input" slot="end" placeholder="email@email.com"></ion-input>
+    </ion-item>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header class="profile-header">
+      <ion-card-subtitle>Currículo</ion-card-subtitle>
+    </ion-card-header>
+
+  <ion-item>
+    <ion-textarea rows="8" placeholder="Escreva seu currículo aqui, detalhando ao maximo toda a sua vida profissional." class="curriculo"></ion-textarea>
+  </ion-item>
+
+  </ion-card>
+
+  <ion-button class="save-button" color="light" >Salvar</ion-button>
+  <ion-button class="logout-button" >Sair da minha conta</ion-button>
+
 </ion-content>
+
+

@@ -1,0 +1,136 @@
+
+
+.userphoto,
+.userphoto > img{
+    border-radius:50%;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    margin: auto;
+}
+
+.username {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+
+    --padding-top: 2px;
+    --padding-bottom: 0px;
+}
+
+.description{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+    --padding-top: 2px;
+}
+
+.my-ion-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sub-texts {
+    text-align: left;
+    border-color: transparent;
+    --background: transparent;
+    --background-activated: #CCCCCC;
+    box-shadow: none;
+    display: block;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 85%;
+
+    color: #86888f;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.sub-card {
+    margin-top: 4px;
+
+}
+
+.profile-header {
+    padding-bottom: 0;
+}
+
+.customSelect {
+    max-width: 100% !important;
+}
+
+.sub-content {
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.sub-label {
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sub-input {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logout-button {
+    width: 90%;
+    letter-spacing: 2px;
+
+    text-align: center;
+    border-color: transparent;
+    --background: transparent;
+    --background-activated: #CCCCCC;
+    box-shadow: none;
+
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #d33939;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.save-button {
+    min-height: 57px;
+    border-radius: 8px;
+    width: 90%;
+
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+    color: Base;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16) !important;
+}
+
+.curriculo {
+    height: 200px;
+}
