@@ -4,6 +4,7 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { AuthService } from 'src/app/core/services/auth.service';
 import { AuthProvider } from 'src/app/core/services/auth.types';
 import { OverlayService } from 'src/app/core/services/overlay.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +22,12 @@ export class LoginPage implements OnInit {
   };
   private nameControl = new FormControl('', [Validators.required, Validators.minLength(3)]);
 
-  constructor(private authService: AuthService, private fb: FormBuilder, private overlayService: OverlayService) {}
+  constructor(
+    private authService: AuthService,
+    private fb: FormBuilder,
+    private navCtrl: NavController,
+    private overlayService: OverlayService
+  ) {}
 
   ngOnInit(): void {
     this.createForm();
@@ -64,8 +70,7 @@ export class LoginPage implements OnInit {
         user: this.authForm.value,
         provider
       });
-      console.log('Autenticado: ', credentials);
-      console.log('Redirecionando...');
+      this.navCtrl.navigateForward('/home');
     } catch (e) {
       console.log('Auth Error: ', e);
       await this.overlayService.toast({
