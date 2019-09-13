@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  afAuth: any;
 
-  constructor() { }
+  constructor(
+    public navCtrl: NavController
+  ) {}
 
   ngOnInit() {
+  }
+
+
+  match() {
+    this.navCtrl.navigateForward('/match');
   }
 
 }

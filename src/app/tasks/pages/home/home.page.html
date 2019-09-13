@@ -9,7 +9,7 @@
       <ion-icon name="contact" color="primary"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button>
+    <ion-tab-button (click)="match()">
       <ion-icon name="md-apps" color="primary"></ion-icon>
     </ion-tab-button>
 
@@ -121,7 +121,7 @@
   </ion-card>
 
   <ion-button class="save-button" color="light" >Salvar</ion-button>
-  <ion-button class="logout-button" >Sair da minha conta</ion-button>
+  <ion-button class="logout-button" (click)="logout()">Sair da minha conta</ion-button>
 
 </ion-content>
 
